@@ -1,0 +1,149 @@
+/* Restablecimiento de márgenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    background-image: url('../img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal del formulario */
+.wrap-login100 {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 50px auto; /* Centrado en la página */
+}
+
+/* Título del formulario que ocupa la parte superior */
+.login100-form-title {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #41b54a;
+    padding: 15px 0; /* Elimina el padding lateral */
+    text-align: center;
+}
+
+/* Ajuste de formulario */
+.login100-form {
+    padding: 20px 30px 40px; /* Reducir padding superior */
+}
+
+/* Input del formulario */
+.wrap-input100 {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input100 {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+.input100::placeholder {
+    color: #999;
+    font-weight: bold;
+}
+
+.text-right {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.txt1, .txt2, .txt3 {
+    font-size: 14px;
+    color: #666;
+}
+
+.txt2, .txt3 {
+    color: #41b54a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.txt2:hover, .txt3:hover {
+    text-decoration: underline;
+}
+
+/* Botón del formulario */
+.container-login100-form-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login100-form-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #41b54a;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login100-form-btn:hover {
+    background-color: #369e3e;
+}
+
+.flex-col-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#errorMessage, #confirmationMessage {
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#errorMessage {
+    color: red;
+    font-weight: bold;
+}
+
+#confirmationMessage {
+    color: green;
+    font-weight: bold;
+}
+
+
+.input100.invalid {
+    border: 2px solid red;
+}
+
+
+@media (max-width: 768px) {
+    .btnAction {
+        padding: 15px 25px; /* Tamaño mayor en dispositivos táctiles */
+        font-size: 18px; /* Tamaño de fuente para mejor visibilidad */
+    }
+}
